@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Profil Muhammad Rassya Kasyfurrahman — PABW 2026/2027</title>
+    <meta name="description" content="Halaman profil mahasiswa PABW: tentang saya, karya, dan kontak.">
+
+    <!-- 5 Berkas CSS Sesuai Urutan Cascade -->
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/komponen.css">
+    <link rel="stylesheet" href="css/tema.css">
+    <link rel="stylesheet" href="css/responsif.css">
+</head>
+
+<body>
+    <a class="lewati" href="#utama">Lewati ke konten utama</a>
+
+    <div class="page">
+        <!-- BARIS 1: HEAD/NAVBAR (Flexbox) -->
+        <header class="kepala navbar">
+            <div>
+                <h1>Muhammad Rassya Kasyfurrahman</h1>
+                <p class="tagline">Mahasiswa Informatika yang sedang belajar membangun web.</p>
+            </div>
+            <nav aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#karya">Karya</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- BARIS 2: AREA ISI (Grid 2 Kolom) -->
+        <div class="isi">
+            <!-- Sidebar / Kolom Kiri -->
+            <aside class="sisi">
+                <figure class="foto">
+                    <img src="media/worksheet6.jpeg" alt="Foto profil Muhammad Rassya Kasyfurrahman" width="480"
+                        height="480" loading="lazy">
+                    <figcaption>Muhammad Rassya Kasyfurrahman (25523258)</figcaption>
+                </figure>
+            </aside>
+
+            <!-- Konten Utama / Kolom Kanan -->
+            <main id="utama" class="utama">
+                <section id="tentang">
+                    <h2>Tentang saya</h2>
+                    <p>Saya mahasiswa Program Studi Informatika Universitas Islam Indonesia. Saya tertarik pada
+                        pengembangan web, khususnya bagian tampilan, karena di sana keputusan teknis langsung terlihat
+                        hasilnya, oleh karena itu saya sekarang mempelajari HTML, CSS, dan JavaScript.</p>
+                    <div class="table-wrap">
+
+                        <table>
+                            <caption>Kegiatan yang saya ikuti semester ini</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Kegiatan</th>
+                                    <th scope="col">Peran</th>
+                                    <th scope="col">Waktu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Praktikum PABW</th>
+                                    <td>Peserta</td>
+                                    <td><time datetime="2026-09">September 2026</time></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Kelas Terbuka Kampus</th>
+                                    <td>Peserta</td>
+                                    <td><time datetime="2026-10">Oktober 2026</time></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Organisasi kemahasiswaan</th>
+                                    <td>Anggota</td>
+                                    <td><time datetime="2026">2026</time></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="karya">
+                    <h2>Karya saya</h2>
+                    <div class="galeri">
+                        <article class="kartu kartu--sorotan">
+                            <div class="kartu__isi">
+                                <h3 class="kartu__judul">Halaman Kelas Terbuka Kampus</h3>
+                                <p>Praktikum, mengimplementasikan struktur HTML semantik dan formulir interaktif.
+                                    Membuat prototipe aplikasi web sederhana.
+                                </p>
+                            </div>
+                            <div class="kartu__kaki">
+                                <span class="tag">HTML & CSS</span>
+                                <span class="tahun">2026</span>
+                            </div>
+                        </article>
+
+                        <article class="kartu">
+                            <div class="kartu__isi">
+                                <h3 class="kartu__judul">Sistem Informasi Profil Mahasiswa</h3>
+                                <p>Pengembangan tata letak modern berbasis Flexbox dan CSS Grid pada Pertemuan 5.</p>
+                            </div>
+                            <div class="kartu__kaki">
+                                <span class="tag">CSS Grid</span>
+                                <span class="tahun">2026</span>
+                            </div>
+                        </article>
+
+                        <article class="kartu">
+                            <div class="kartu__isi">
+                                <h3 class="kartu__judul">Eksplorasi Design Tokens</h3>
+                                <p>Penerapan CSS Custom Properties untuk skema warna terpusat dan tema gelap.</p>
+                            </div>
+                            <div class="kartu__kaki">
+                                <span class="tag">Tokens</span>
+                                <span class="tahun">2026</span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- 3: FAQ (<details>) -->
+                <section id="faq">
+                    <h2>Tanya Jawab (FAQ)</h2>
+                    <details>
+                        <summary>Apa fokus studi saya saat ini?</summary>
+                        <p>Fokus studi saat ini adalah mempelajari dasar-dasar pengembangan web front-end seperti HTML,
+                            CSS, dan JavaScript.</p>
+                    </details>
+                    <details>
+                        <summary>Teknologi apa yang sedang dipelajari?</summary>
+                        <p>Teknologi yang dipelajari meliputi HTML untuk struktur semantik, CSS untuk penataan gaya dan
+                            layout.</p>
+                    </details>
+                </section>
+
+                <section id="kontak">
+                    <h2>Hubungi saya</h2>
+                    <p>Isi formulir berikut. Semua kolom bertanda wajib harus diisi.</p>
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Data pengirim</legend>
+
+                            <div class="form-group">
+                                <label for="nama">Nama lengkap*</label>
+                                <input id="nama" name="nama" type="text" autocomplete="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input id="email" name="email" type="email" autocomplete="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nim">NIM*</label>
+                                <input id="nim" name="nim" type="text" inputmode="numeric" pattern="[0-9]{8}"
+                                    aria-describedby="nim-bantuan" required>
+                                <span id="nim-bantuan" class="hint">Delapan digit angka, contoh 25523258.</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="pesan">Pesan*</label>
+                                <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                            </div>
+
+                            <button type="submit">Kirim</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="kaki">
+            <p>Muhammad Rassya Kasyfurrahman · 25523258 · Kelas E · <time datetime="2026">2026</time></p>
+        </footer>
+    </div>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

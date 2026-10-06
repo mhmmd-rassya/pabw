@@ -1,0 +1,9 @@
+/* Dukungan Tema Gelap Otomatis / Manual */
+:root {
+  --color-bg: #0a1122;
+  --color-fg: #ffffff;
+  --color-surface: #121d36;
+  --color-border: #1c2a4a;
+  --color-primary: #4c82f6;
+  --color-focus: #3b71e5;
+}

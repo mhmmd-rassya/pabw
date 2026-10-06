@@ -1,0 +1,45 @@
+/* 1. DASAR: Berlaku di semua lebar (HP / Mobile) */
+.isi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.kartu--sorotan {
+  grid-column: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* 2. TABLET (min-width: 48rem / 768px): Galeri 2 kolom */
+@media (min-width: 48rem) {
+  .galeri {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kartu--sorotan {
+    grid-column: span 2;
+  }
+}
+
+/* 3. DESKTOP (min-width: 60rem / 960px): Layout 2 kolom & Galeri 3 kolom */
+@media (min-width: 60rem) {
+  .isi {
+    grid-template-columns: 16rem 1fr;
+  }
+  .galeri {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

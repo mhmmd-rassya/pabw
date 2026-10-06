@@ -1,0 +1,173 @@
+/* Galeri Adaptif tanpa Media Query */
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+/* Kartu Galeri (Grid Internal) */
+.kartu {
+  display: grid;
+  align-content: start;
+  min-height: 14rem;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* Penempatan Span Sorotan */
+.kartu--sorotan {
+  grid-column: span 2;
+}
+
+@media (max-width: 640px) {
+  .kartu--sorotan {
+    grid-column: span 1;
+  }
+}
+
+/* Proteksi Overflow  */
+.kartu__isi {
+  min-width: 0;
+}
+
+.kartu__judul,
+.kartu h3 {
+  overflow-wrap: anywhere;
+  margin-top: 0;
+  margin-bottom: var(--space-2);
+}
+
+.kartu__kaki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+/* Foto Profil */
+figure.foto {
+  margin: 0;
+}
+
+figure.foto img {
+  border-radius: var(--radius-md);
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: var(--space-2);
+  text-align: center;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-2);
+}
+
+th,
+td {
+  border: 1px solid var(--color-border);
+  padding: var(--space-2) var(--space-3);
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-surface);
+}
+
+/* Form, Fieldset & Input */
+fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  background-color: var(--color-surface);
+}
+
+legend {
+  padding: 0 var(--space-2);
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: #24324d;
+  color: #ffffff;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: var(--color-focus);
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+/* Details & Summary */
+details {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* List / Lini Masa / Keterampilan */
+.lini {
+  padding-left: var(--space-4);
+}
+
+.lini li {
+  margin-bottom: var(--space-3);
+}
+
+.keterampilan dt {
+  font-weight: bold;
+  margin-top: var(--space-2);
+  color: var(--color-primary);
+}
+
+.keterampilan dd {
+  margin-left: 0;
+  margin-bottom: var(--space-2);
+}

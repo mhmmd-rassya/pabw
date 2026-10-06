@@ -1,0 +1,76 @@
+/* Kerangka Halaman Utama (Grid 3 Baris - Worksheet P5 Lembar B.1) */
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  padding: var(--space-4);
+  gap: var(--space-6);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navbar (Flexbox Satu Baris - Worksheet P5 Lembar B.2) */
+.navbar {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar ul {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--color-fg);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--color-focus);
+}
+
+/* Area Isi Utama  */
+.isi {
+  display: grid;
+  grid-template-columns: 1fr; /* Ubah jadi 1fr agar di HP tidak terbagi 2 kolom */
+  gap: var(--space-6);
+}
+
+.utama {
+  /* grid-area: utama; */
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* Kaki Halaman / Footer */
+.kaki {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+
+  max-width: 800px;
+  margin-inline: auto;
+  width: 100%;
+}

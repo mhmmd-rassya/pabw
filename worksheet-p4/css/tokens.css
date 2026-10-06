@@ -1,0 +1,23 @@
+:root {
+  /* Lapis 1: Primitif */
+  --navy-900: #0f172a;
+  --slate-100: #f8fafc;
+  --slate-300: #cbd5e1;
+  --blue-700: #0a0f1d;
+  --blue-500: #2563eb;
+  --red-600: #dc2626;
+
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --radius-md: 0.5rem;
+
+  /* Lapis 2: Semantik */
+  --color-bg: var(--slate-100);
+  --color-fg: var(--navy-900);
+  --color-surface: #ffffff;
+  --color-border: var(--slate-300);
+  --color-primary: var(--blue-700);
+  --color-danger: var(--red-600);
+  --color-focus: var(--blue-500);
+}

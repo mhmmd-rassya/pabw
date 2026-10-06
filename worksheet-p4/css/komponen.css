@@ -1,0 +1,22 @@
+input, select, textarea, button {
+  font: inherit;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+button {
+  background: #D4AF37;
+  color: #000;
+  cursor: pointer;
+  padding: var(--space-3),var(--space-3) var(--radius-md);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+input:user-invalid {
+  border-color: var(--color-danger);
+}

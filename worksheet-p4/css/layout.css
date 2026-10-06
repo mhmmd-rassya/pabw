@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.katalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.kartu {
+  flex: 1 1 250px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}

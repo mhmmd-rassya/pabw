@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Profil Muhammad Rassya Kasyfurrahman — PABW 2026/2027</title>
+  <meta name="description" content="Halaman profil mahasiswa PABW: tentang saya, karya, dan kontak." />
+
+  <!-- LEMBAR D: URUTAN PEMUATAN CASCAING -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/komponen.css" />
+  <link rel="stylesheet" href="css/tema.css" />
+</head>
+
+<body>
+  <a class="lewati" href="#utama">Lewati ke konten utama</a>
+
+  <header class="kepala">
+    <div>
+      <h1>Rassya</h1>
+      <p class="tagline">
+        Mahasiswa Informatika yang sedang belajar membangun web.
+      </p>
+    </div>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#karya">Karya</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="utama">
+    <section id="tentang">
+      <h2>Tentang saya</h2>
+
+      <figure class="foto">
+        <img src="media/worksheet4.jpeg" alt="Foto profil Muhammad Rassya Kasyfurrahman" width="480" height="480"
+          loading="lazy" />
+        <figcaption>Foto profil Muhammad Rassya Kasyfurrahman</figcaption>
+      </figure>
+
+      <p>
+        Saya mahasiswa Program Studi Informatika Universitas Islam Indonesia.
+        Saya tertarik pada pengembangan web, khususnya bagian tampilan, karena
+        di sana keputusan teknis langsung terlihat hasilnya, oleh karena itu
+        saya sekarang mempelajari HTML, CSS, dan JavaScript.
+      </p>
+
+      <table>
+        <caption>
+          Kegiatan yang saya ikuti semester ini
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Kegiatan</th>
+            <th scope="col">Peran</th>
+            <th scope="col">Waktu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Praktikum PABW</th>
+            <td>Peserta</td>
+            <td><time datetime="2026-09">September 2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Kelas Terbuka Kampus</th>
+            <td>Peserta</td>
+            <td><time datetime="2026-10">Oktober 2026</time></td>
+          </tr>
+          <tr>
+            <th scope="row">Organisasi kemahasiswaan</th>
+            <td>Anggota</td>
+            <td><time datetime="2026">2026</time></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="karya">
+      <h2>Karya saya</h2>
+      <ul class="katalog">
+        <li class="kartu">
+          <h3>Halaman Kelas Terbuka Kampus</h3>
+          <p>Praktikum PABW, HTML dan formulir interaktif.</p>
+        </li>
+        <li class="kartu">
+          <h3>Aplikasi Java & Scene Builder</h3>
+          <p>Pengembangan antarmuka berbasis desktop JavaFX.</p>
+        </li>
+        <li class="kartu">
+          <h3>Desain UI/UX Figma</h3>
+          <p>Perancangan prototype antarmuka aplikasi seluler.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="kontak">
+      <h2>Hubungi saya</h2>
+      <p>Isi formulir berikut. Semua kolom bertanda wajib harus diisi.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Data pengirim</legend>
+
+          <p>
+            <label for="nama">Nama lengkap</label>
+            <input id="nama" name="nama" type="text" autocomplete="name" required />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </p>
+
+          <p>
+            <label for="nim">NIM</label>
+            <input id="nim" name="nim" type="text" inputmode="numeric" pattern="[0-9]{8}" aria-describedby="nim-bantuan"
+              required />
+            <span id="nim-bantuan">Delapan digit angka, contoh 25523258.</span>
+          </p>
+
+          <p>
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea>
+          </p>
+
+          <button type="submit">Kirim</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- STRUKTUR TAMBAHAN 1: Tanya Jawab -->
+    <section id="tanya-jawab">
+      <h2>Tanya Jawab</h2>
+      <details>
+        <summary>Apa fokus studi saya saat ini?</summary>
+        <p>Pengembangan Web, Sistem Informasi, dan UI/UX Design.</p>
+      </details>
+      <details>
+        <summary>Teknologi apa yang sedang dipelajari?</summary>
+        <p>HTML Semantik, CSS Design Tokens, Flexbox, dan JavaFX.</p>
+      </details>
+    </section>
+
+    <!-- STRUKTUR TAMBAHAN 2: Lini Masa -->
+    <section id="-masa">
+      <h2>Lini Masa Perjalanan</h2>
+      <ol class="lini">
+        <li><time datetime="2025-08">Agustus 2025</time> — Diterima di Informatika UII.</li>
+        <li><time datetime="2026-02">Februari 2026</time> — Mempelajari Pemrograman Berbasis Objek.</li>
+        <li><time datetime="2026-09">September 2026</time> — Praktikum PABW Pertemuan 4 (Design Tokens).</li>
+      </ol>
+    </section>
+
+    <!-- STRUKTUR TAMBAHAN 3: Keterampilan -->
+    <section id="keterampilan">
+      <h2>Keterampilan Teknikal</h2>
+      <dl class="keterampilan">
+        <dt>HTML & CSS Semantik</dt>
+        <dd>mendesain halaman web yang aksesibel dan terstruktur dengan baik.</dd>
+        <dt>Java & Scene Builder</dt>
+        <dd>Pengembangan aplikasi desktop bertingkat dengan pemisahan logika dan tampilan.</dd>
+        <dt>UI/UX Design</dt>
+        <dd>Pembuatan wireframe dan prototipe interaktif menggunakan Figma.</dd>
+      </dl>
+    </section>
+  </main>
+  <footer class="kaki">
+    <p>Muhammad Rassya Kasyfurrahman · 25523258 · <time datetime="2026">2026</time></p>
+  </footer>
+</body>
+
+</html>
