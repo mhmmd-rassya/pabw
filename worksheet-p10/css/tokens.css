@@ -1,0 +1,28 @@
+:root {
+  /* Design Tokens Primitif */
+  --navy-900: #0d162d;
+  --navy-800: #121d36;
+  --navy-700: #1c2a4a;
+  --slate-100: #f8fafc;
+  --slate-300: #cbd5e1;
+  --slate-400: #a0aec0;
+  --blue-500: #4c82f6;
+  --blue-600: #3b71e5;
+  --red-600: #dc2626;
+
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --radius-md: 0.5rem;
+
+  /* Design Tokens Semantik */
+  --color-bg: #0a1122;
+  --color-fg: #ffffff;
+  --color-surface: var(--navy-800);
+  --color-border: var(--navy-700);
+  --color-primary: var(--blue-500);
+  --color-danger: var(--red-600);
+  --color-focus: var(--blue-500);
+  --color-muted: var(--slate-400);
+}
